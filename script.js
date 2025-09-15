@@ -3,7 +3,7 @@ let inputurl = document.getElementById("inputurl")
 let tablecontent = document.getElementById("tablecontent")
 let arr = JSON.parse(localStorage.getItem("link")) || []
 display()
-  let regex = /^[a-z]{3}/
+  let regex = /^[\w]{3}/
 let regex2 = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(:\d+)?(\/[^\s]*)?$/;
 
 function savedata() {
@@ -100,4 +100,5 @@ else if(regex2.test(inputurl.value) == true){
      inputurl.classList.add("valed")
 
 }
+
 }
