@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- icon -->
+    <link rel="icon" href="./download.jpg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./stylee.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <h1 class="text-center my-5 pt-3">Bookmarker</h1>
+    <div class="text-center head">
+        <h2 class="mt-4"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                class="fa-solid fa-bookmark"></i> </h2>
+    </div>
+    <form class="needs-validation was-validated"></form>
+    <div class="container mt-4">
+        <label for="inputname" class="form-label mb-3 "> <i class="fa-solid fa-book-bookmark pe-2"></i> Site
+            Name</label>
+        <input type="text" id="inputname" class="form-control " oninput="Validname()" placeholder="Bookmark Name">
+        <label for="inputurl" class="form-label mb-3 mt-4 "> <i class="fa-solid fa-link pe-2"></i> site URL</label>
+        <input type="text" id="inputurl" class="form-control"  oninput="Validurl()" placeholder="Website URL">
+    </div>
+    
+    <div class="text-center mt-4 h">
+        <button onclick="savedata()" class="btn text-white px-5">Submit</button>
+    </div>
+   <div class="container mt-4 ">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="px-5 py-3" scope="col">index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+
+            </tr>`
+            </tr>
+        </thead>
+        <tbody id="tablecontent">
+
+
+        </tbody>
+    </table>
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
